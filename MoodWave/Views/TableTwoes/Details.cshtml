@@ -1,0 +1,50 @@
+﻿@model MoodWave.Models.TableTwo
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TableTwo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StaticEmotions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StaticEmotions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Track)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Track)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Artist)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Artist)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.UserID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
